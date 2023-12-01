@@ -1,20 +1,32 @@
+/* VARIABLES (COLORS) */
+:root {
+  --text: rgb(249, 249, 251);
+  --background: rgb(18, 17, 29);
+  --primary: rgb(99, 70, 119);
+  --secondary: rgb(22, 13, 22);
+  --accent: rgb(151, 89, 145);
+}
+
 .navbar {
-  height: 3rem;
+  height: 3.6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0rem 2rem;
+  background-color: var(--background);
 }
 
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
+  color: var(--text);
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   column-gap: 2rem;
+  background-color: var(--background);
 }
 
 input[type="checkbox"] {
@@ -24,6 +36,7 @@ input[type="checkbox"] {
 .ham {
   display: none;
   cursor: pointer;
+  color: var(--text);
 }
 
 .ham::before {
@@ -41,13 +54,12 @@ input[type="checkbox"] {
     position: absolute;
     right: 0;
     left: 0;
-    top: 3rem;
+    top: 3.6rem;
     flex-direction: column;
     padding: 1rem 2rem;
     row-gap: 0.8rem;
     align-items: flex-start;
     display: none;
-    background-color: white;
   }
   input[type="checkbox"]:checked ~ .nav-links {
     display: flex;

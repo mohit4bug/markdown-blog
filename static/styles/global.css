@@ -125,6 +125,20 @@ table {
 }
 /* RESET CSS END */
 
+/* VARIABLES (COLORS) */
+:root {
+  --text: rgb(249, 249, 251);
+  --background: rgb(18, 17, 29);
+  --primary: rgb(99, 70, 119);
+  --secondary: rgb(22, 13, 22);
+  --accent: rgb(151, 89, 145);
+}
+
 body {
   font-family: "Inter Tight", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
 }
