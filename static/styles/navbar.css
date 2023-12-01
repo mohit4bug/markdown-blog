@@ -1,0 +1,66 @@
+.navbar {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.ham {
+  display: none;
+  cursor: pointer;
+}
+
+.ham::before {
+  content: "Menu";
+}
+
+@media (max-width: 768px) {
+  .ham {
+    display: block;
+  }
+  .navbar {
+    position: relative;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 3rem;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    row-gap: 0.8rem;
+    align-items: flex-start;
+    display: none;
+    background-color: white;
+  }
+  input[type="checkbox"]:checked ~ .nav-links {
+    display: flex;
+  }
+  input[type="checkbox"]:checked ~ .ham::before {
+    content: "Close";
+  }
+}
+@media (max-width: 425px) {
+  .navbar {
+    padding: 0rem 1rem;
+  }
+  .nav-links {
+    padding: 1rem 1rem;
+  }
+}
