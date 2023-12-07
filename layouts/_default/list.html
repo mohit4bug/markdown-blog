@@ -1,3 +1,24 @@
 {{ define "main" }}
-<div>This is List</div>
+<link rel="stylesheet" href="/styles/list.css" />
+<div class="list">
+  {{ range .Paginator.Pages }}
+  <div class="list-item">
+    <div class="img-container">
+      <img
+        src="https://img.freepik.com/premium-vector/yellow-color-halftone-youtube-thumbnail-background_562076-95.jpg?w=2000"
+        alt="thumbnail"
+      />
+    </div>
+    <div class="content-container">
+      <h1 class="content-heading">
+        The TypeScript 5.3 Feature They Didn't Tell You About
+      </h1>
+      <p class="content-desc">
+        TypeScript 5.3 introduces relaxed rules around readonly arrays and
+        improvements in const type parameters.
+      </p>
+    </div>
+  </div>
+  {{ end }}
+</div>
 {{ end }}

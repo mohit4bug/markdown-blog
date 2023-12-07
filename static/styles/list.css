@@ -1,0 +1,63 @@
+/* VARIABLES (COLORS) */
+:root {
+  --text: rgb(249, 249, 251);
+  --background: rgb(18, 17, 29);
+  --primary: rgb(99, 70, 119);
+  --secondary: rgb(22, 13, 22);
+  --accent: rgb(151, 89, 145);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--background);
+}
+
+.list-item {
+  height: 20rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.img-container {
+  flex: 1;
+  padding: 1rem;
+  border: 1.4px solid rgb(30, 30, 50);
+  border-radius: 1rem;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.content-container {
+  flex: 1;
+  color: var(--text);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content-heading {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.75rem;
+}
+
+.content-desc {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgb(165, 165, 220);
+  line-height: 2rem;
+}
+
+@media (max-width: 425px) {
+  .list {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
